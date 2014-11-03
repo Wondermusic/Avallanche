@@ -37,8 +37,9 @@
             <Control x:type="Image">
               <Name>Image</Name>
               <Id>3</Id>
-              <Width>1024</Width>
+              <Width>1324</Width>
               <Height>768</Height>
+              <PosX>-150</PosX>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -215,19 +216,20 @@
         </Control>
         <Control x:type="Image">
           <Name>Rec Icon</Name>
-          <Id>45</Id>
-          <Width>137</Width>
-          <Height>38</Height>
-          <PosX>500</PosX>
+          <Id>46</Id>
+          <Width>244</Width>
+          <Height>72</Height>
+          <PosX>778</PosX>
           <VisibleCondition>IsTvRecording</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations>
-            <Animation x:type="Slide" Condition="VisibleTrue" Duration="1000" Easing="EaseOut" />
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="100000" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
           </Animations>
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
           <Image>\RecordingIndicator.png</Image>
-          <ImageStretch>Fill</ImageStretch>
+          <ImageStretch>Uniform</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
       </GroupControls>
