@@ -27,8 +27,6 @@
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
             <BackgroundBrush />
             <BorderBrush />
             <GlossBrush />
@@ -37,9 +35,8 @@
             <Control x:type="Image">
               <Name>Image</Name>
               <Id>12</Id>
-              <Width>1324</Width>
+              <Width>1024</Width>
               <Height>768</Height>
-              <PosX>-150</PosX>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -64,9 +61,9 @@
             <Control x:type="Image">
               <Name>Overlay2</Name>
               <Id>14</Id>
-              <Width>1261</Width>
-              <Height>430</Height>
-              <PosY>61</PosY>
+              <Width>1011</Width>
+              <Height>462</Height>
+              <PosY>64</PosY>
               <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
@@ -110,8 +107,6 @@
                   <VisibleCondition />
                   <Animations />
                   <MediaPortalFocusControls />
-                  <BorderThickness>0,0,0,0</BorderThickness>
-                  <CornerRadius>0,0,0,0</CornerRadius>
                   <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
                 </Control>
                 <Control x:type="Label">
@@ -130,15 +125,30 @@
                   <ScrollSpeed>2</ScrollSpeed>
                   <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
                 </Control>
+              </GroupControls>
+            </Control>
+            <Control x:type="Group">
+              <Name>TimeRec</Name>
+              <Id>165</Id>
+              <Width>1024</Width>
+              <Height>80</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <GroupStyle />
+              <GroupControls>
                 <Control x:type="Label">
                   <Name>Time</Name>
-                  <Id>163</Id>
+                  <Id>166</Id>
                   <Width>308</Width>
                   <Height>95</Height>
                   <PosX>711</PosX>
                   <PosY>-10</PosY>
-                  <VisibleCondition />
-                  <Animations />
+                  <VisibleCondition>!IsControlVisible(167)</VisibleCondition>
+                  <Animations>
+                    <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" />
+                    <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Reverse="true" Repeat="100000" From="100" To="0" />
+                  </Animations>
                   <MediaPortalFocusControls />
                   <LabelStyle StyleId="Avalon 85 Grey" />
                   <LabelText>#time</LabelText>
@@ -149,20 +159,20 @@
                 </Control>
                 <Control x:type="Image">
                   <Name>Rec Icon</Name>
-                  <Id>25</Id>
-                  <Width>244</Width>
-                  <Height>72</Height>
-                  <PosX>778</PosX>
+                  <Id>167</Id>
+                  <Width>200</Width>
+                  <Height>76</Height>
+                  <PosX>820</PosX>
                   <VisibleCondition>IsTvRecording</VisibleCondition>
                   <IsWindowOpenVisible>false</IsWindowOpenVisible>
                   <Animations>
-                    <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="100000" />
-                    <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
+                    <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Reverse="true" Repeat="50000" />
+                    <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" From="100" To="0" />
                   </Animations>
                   <MediaPortalFocusControls />
                   <ImageStyle StyleId="Logo_Image" />
                   <Image>\RecordingIndicator.png</Image>
-                  <ImageStretch>Uniform</ImageStretch>
+                  <ImageStretch>Fill</ImageStretch>
                   <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
                 </Control>
               </GroupControls>
@@ -172,19 +182,16 @@
         <Control x:type="Label">
           <Name>Title</Name>
           <Id>20</Id>
-          <Width>1260</Width>
-          <Height>200</Height>
+          <Width>1024</Width>
+          <Height>90</Height>
           <PosX>10</PosX>
-          <PosY>470</PosY>
+          <PosY>507</PosY>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Avalon 74 White" />
           <LabelText>#MPD_MovPic</LabelText>
-          <IsVertical>true</IsVertical>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
           <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
         </Control>
         <Control x:type="Group">
           <Name>CatView</Name>
@@ -201,7 +208,7 @@
               <Id>22</Id>
               <Width>300</Width>
               <Height>300</Height>
-              <PosX>10</PosX>
+              <PosX>17</PosX>
               <PosY>125</PosY>
               <VisibleCondition />
               <Animations />
@@ -245,16 +252,17 @@
             <Control x:type="List">
               <Name>List</Name>
               <Id>155</Id>
-              <Width>1240</Width>
-              <Height>385</Height>
+              <Width>993</Width>
+              <Height>418</Height>
               <PosY>85</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
               <ListControlStyle StyleId="empty" />
               <ListType>MediaPortalListControl</ListType>
-              <ListLayout>Auto</ListLayout>
+              <ListLayout>Vertical</ListLayout>
               <VerticalItemStyle StyleId="MovPic_Vertical" />
+              <VerticalIconItemStyle StyleId="Empty ListItemStyle" />
               <HorizontalItemStyle StyleId="Horizontal" />
               <CoverFlowItemStyle StyleId="Coverflow" />
             </Control>
@@ -285,24 +293,24 @@
               </Animations>
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
-              <Image>\Arts\MovingPictures\DVDArt\FullSize\+#MovingPictures.SelectedMovie.imdb_id+.png</Image>
+              <Image>#MPD.MovingPictures.CDArt</Image>
               <DefaultImage>\blu-ray-disc-b.png</DefaultImage>
               <ImageStretch>Fill</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
             <Control x:type="Image">
-              <Name>ClearArt</Name>
+              <Name>ClearLogo</Name>
               <Id>153</Id>
               <Width>441</Width>
               <Height>169</Height>
-              <PosX>834</PosX>
-              <PosY>546</PosY>
+              <PosX>574</PosX>
+              <PosY>594</PosY>
               <VisibleCondition>IsControlVisible(23)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
-              <Image>\Arts\MovingPictures\ClearLogo\FullSize\+#MovingPictures.SelectedMovie.imdb_id+.png</Image>
+              <Image>#MPD.MovingPictures.ClearLogo</Image>
               <ImageStretch>Uniform</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
@@ -344,8 +352,8 @@
             <Control x:type="List">
               <Name>List</Name>
               <Id>154</Id>
-              <Width>1240</Width>
-              <Height>385</Height>
+              <Width>993</Width>
+              <Height>418</Height>
               <PosY>85</PosY>
               <VisibleCondition />
               <Animations />
@@ -354,6 +362,7 @@
               <ListType>MediaPortalListControl</ListType>
               <ListLayout>Auto</ListLayout>
               <VerticalItemStyle StyleId="MovPic_Vertical2" />
+              <VerticalIconItemStyle StyleId="Empty ListItemStyle" />
               <HorizontalItemStyle StyleId="Horizontal" />
               <CoverFlowItemStyle StyleId="Coverflow" />
             </Control>
@@ -381,8 +390,6 @@
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
             <BackgroundBrush />
             <BorderBrush />
             <GlossBrush />
@@ -391,9 +398,8 @@
             <Control x:type="Image">
               <Name>Image</Name>
               <Id>28</Id>
-              <Width>1324</Width>
+              <Width>1024</Width>
               <Height>768</Height>
-              <PosX>-150</PosX>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -1406,9 +1412,8 @@
         <Control x:type="Image">
           <Name>Image</Name>
           <Id>106</Id>
-          <Width>1324</Width>
+          <Width>1024</Width>
           <Height>768</Height>
-          <PosX>-150</PosX>
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
@@ -1543,6 +1548,7 @@
           <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="Dialog vertical" />
+          <VerticalIconItemStyle />
           <HorizontalItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
             <CornerRadius>4,4,4,4</CornerRadius>

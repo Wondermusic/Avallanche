@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayDialog">
+  <Name>Rec1</Name>
+  <Id>2000</Id>
+  <Width>1024</Width>
+  <Height>768</Height>
+  <BorderThickness>2</BorderThickness>
+  <CornerRadius>5</CornerRadius>
+  <BackgroundBrush />
+  <BorderBrush />
+  <DialogAnimations>
+    <Animation x:type="Slide" Condition="WindowOpen" Duration="1000" Easing="EaseInOut" StartY="768" />
+    <Animation x:type="Slide" Condition="WindowClose" Duration="1000" Easing="EaseInOut" EndY="768" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Image">
+      <Name>BG</Name>
+      <Id>1</Id>
+      <Width>840</Width>
+      <Height>597</Height>
+      <PosX>103</PosX>
+      <PosY>194</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="RecBG" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Label">
+      <Name>Label</Name>
+      <Id>2</Id>
+      <Width>570</Width>
+      <Height>195</Height>
+      <PosX>243</PosX>
+      <PosY>312</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 50 White" />
+      <LabelText>@Rec1</LabelText>
+      <LabelTextAlignment>Center</LabelTextAlignment>
+      <IsVertical>true</IsVertical>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Button">
+      <Name>yes</Name>
+      <Id>3</Id>
+      <Width>255</Width>
+      <Height>72</Height>
+      <PosX>238</PosX>
+      <PosY>586</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="RecButton" />
+      <LabelText>@yes</LabelText>
+      <Actions>
+        <Action Action="ScheduleEPGAction" />
+        <Action Action="OpenDialog" Param="2000" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>no</Name>
+      <Id>4</Id>
+      <Width>255</Width>
+      <Height>72</Height>
+      <PosX>543</PosX>
+      <PosY>586</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="RecButton" />
+      <LabelText>@no</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="2000" />
+      </Actions>
+    </Control>
+  </DialogControls>
+</Dialog>

@@ -14,9 +14,8 @@
     <Control x:type="Image">
       <Name>NewImage</Name>
       <Id>5</Id>
-      <Width>1324</Width>
+      <Width>1024</Width>
       <Height>768</Height>
-      <PosX>-150</PosX>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
