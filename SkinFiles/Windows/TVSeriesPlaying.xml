@@ -50,7 +50,7 @@
               <Name>NewRectangle</Name>
               <Id>47</Id>
               <Width>1024</Width>
-              <Height>720</Height>
+              <Height>768</Height>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -226,10 +226,10 @@
             <Control x:type="ProgressBar">
               <Name>ProgressBar</Name>
               <Id>28</Id>
-              <Width>450</Width>
+              <Width>924</Width>
               <Height>50</Height>
-              <PosX>287</PosX>
-              <PosY>610</PosY>
+              <PosX>50</PosX>
+              <PosY>635</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -241,7 +241,8 @@
               <Id>29</Id>
               <Width>350</Width>
               <Height>84</Height>
-              <PosY>594</PosY>
+              <PosX>50</PosX>
+              <PosY>685</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -256,8 +257,8 @@
               <Id>30</Id>
               <Width>350</Width>
               <Height>84</Height>
-              <PosX>670</PosX>
-              <PosY>594</PosY>
+              <PosX>631</PosX>
+              <PosY>685</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -272,16 +273,19 @@
               <Name>Episode</Name>
               <Id>31</Id>
               <Width>1024</Width>
-              <Height>105</Height>
-              <PosY>496</PosY>
+              <Height>130</Height>
+              <PosY>504</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Avalon 85 White" />
+              <LabelStyle StyleId="Avalon 60 White" />
               <LabelText>#TVSeries.Episode.LocalEpisodeName</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
+              <IsVertical>true</IsVertical>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollDelay>2</ScrollDelay>
               <ScrollSpeed>10</ScrollSpeed>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
             </Control>
             <Control x:type="Image">
               <Name>ClearArt</Name>
@@ -293,7 +297,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
-              <Image>\Arts\TVSeries\ClearArt\FullSize\+#TVSeries.Series.ID+.png</Image>
+              <Image>#MPD.TVSeries.ClearArt</Image>
               <ImageStretch>Uniform</ImageStretch>
               <ImageCornerRadius>10</ImageCornerRadius>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -317,7 +321,7 @@
               <Width>1000</Width>
               <Height>450</Height>
               <PosX>12</PosX>
-              <PosY>328</PosY>
+              <PosY>396</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -331,7 +335,7 @@
               <Width>700</Width>
               <Height>50</Height>
               <PosX>270</PosX>
-              <PosY>544</PosY>
+              <PosY>626</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -344,7 +348,7 @@
               <Width>350</Width>
               <Height>84</Height>
               <PosX>270</PosX>
-              <PosY>600</PosY>
+              <PosY>672</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -360,7 +364,7 @@
               <Width>350</Width>
               <Height>84</Height>
               <PosX>628</PosX>
-              <PosY>600</PosY>
+              <PosY>672</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -375,13 +379,13 @@
               <Name>Episode</Name>
               <Id>37</Id>
               <Width>710</Width>
-              <Height>105</Height>
+              <Height>80</Height>
               <PosX>267</PosX>
-              <PosY>447</PosY>
+              <PosY>545</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <LabelStyle StyleId="Avalon 85 White" />
+              <LabelStyle StyleId="Avalon 60 White" />
               <LabelText>#TVSeries.Episode.LocalEpisodeName</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <ScrollDelay>2</ScrollDelay>
@@ -394,7 +398,7 @@
               <Width>710</Width>
               <Height>105</Height>
               <PosX>267</PosX>
-              <PosY>364</PosY>
+              <PosY>422</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -410,7 +414,7 @@
               <Width>211</Width>
               <Height>293</Height>
               <PosX>54</PosX>
-              <PosY>369</PosY>
+              <PosY>448</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />

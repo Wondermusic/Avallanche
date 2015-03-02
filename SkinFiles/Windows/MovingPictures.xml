@@ -179,20 +179,6 @@
             </Control>
           </GroupControls>
         </Control>
-        <Control x:type="Label">
-          <Name>Title</Name>
-          <Id>20</Id>
-          <Width>1024</Width>
-          <Height>90</Height>
-          <PosX>10</PosX>
-          <PosY>507</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Avalon 74 White" />
-          <LabelText>#MPD_MovPic</LabelText>
-          <ScrollSpeed>2</ScrollSpeed>
-        </Control>
         <Control x:type="Group">
           <Name>CatView</Name>
           <Id>21</Id>
@@ -266,6 +252,20 @@
               <HorizontalItemStyle StyleId="Horizontal" />
               <CoverFlowItemStyle StyleId="Coverflow" />
             </Control>
+            <Control x:type="Label">
+              <Name>Title</Name>
+              <Id>168</Id>
+              <Width>1024</Width>
+              <Height>90</Height>
+              <PosX>10</PosX>
+              <PosY>507</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 74 White" />
+              <LabelText>#MPD_MovPic</LabelText>
+              <ScrollSpeed>2</ScrollSpeed>
+            </Control>
           </GroupControls>
         </Control>
         <Control x:type="Group">
@@ -288,7 +288,7 @@
               <VisibleCondition>IsControlVisible(23)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations>
-                <Animation x:type="Rotate" Condition="VisibleTrue" Duration="4000" Repeat="10000" Pos3DZTo="-360" />
+                <Animation x:type="Rotate" Condition="VisibleTrue" Duration="8000" Repeat="10000" Pos3DZTo="-360" />
                 <Animation x:type="Slide" Condition="VisibleTrue" Duration="800" StartX="80" StartY="140" EndX="190" EndY="140" />
               </Animations>
               <MediaPortalFocusControls />
@@ -301,10 +301,9 @@
             <Control x:type="Image">
               <Name>ClearLogo</Name>
               <Id>153</Id>
-              <Width>441</Width>
-              <Height>169</Height>
-              <PosX>574</PosX>
-              <PosY>594</PosY>
+              <Width>1024</Width>
+              <Height>255</Height>
+              <PosY>508</PosY>
               <VisibleCondition>IsControlVisible(23)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />

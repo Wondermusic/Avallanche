@@ -236,7 +236,7 @@
               <Width>988</Width>
               <Height>634</Height>
               <PosX>18</PosX>
-              <PosY>195</PosY>
+              <PosY>245</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -248,9 +248,9 @@
               <Name>ClearArt</Name>
               <Id>49</Id>
               <Width>917</Width>
-              <Height>263</Height>
-              <PosX>55</PosX>
-              <PosY>244</PosY>
+              <Height>309</Height>
+              <PosX>53</PosX>
+              <PosY>295</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -262,10 +262,10 @@
             <Control x:type="ProgressBar">
               <Name>ProgressBar</Name>
               <Id>51</Id>
-              <Width>915</Width>
+              <Width>900</Width>
               <Height>56</Height>
-              <PosX>67</PosX>
-              <PosY>521</PosY>
+              <PosX>60</PosX>
+              <PosY>611</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -277,8 +277,8 @@
               <Id>52</Id>
               <Width>321</Width>
               <Height>105</Height>
-              <PosX>66</PosX>
-              <PosY>590</PosY>
+              <PosX>60</PosX>
+              <PosY>672</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -293,8 +293,8 @@
               <Id>53</Id>
               <Width>420</Width>
               <Height>105</Height>
-              <PosX>559</PosX>
-              <PosY>590</PosY>
+              <PosX>550</PosX>
+              <PosY>672</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />

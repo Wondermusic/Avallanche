@@ -3,7 +3,7 @@
   <Name>SideRemote</Name>
   <Id>903</Id>
   <Width>364</Width>
-  <Height>366</Height>
+  <Height>431</Height>
   <BorderThickness>2</BorderThickness>
   <CornerRadius>25,25,25,25</CornerRadius>
   <BackgroundBrush x:type="GradientBrush">
@@ -245,6 +245,23 @@
       <Image>\top_exit_disabled.png</Image>
       <LabelText>NewButton</LabelText>
       <Actions>
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>ShortCutMenu</Name>
+      <Id>12</Id>
+      <Width>200</Width>
+      <Height>100</Height>
+      <PosX>82</PosX>
+      <PosY>328</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="Clear" />
+      <Image>\Settings\CoolClips_busi0286.jpg</Image>
+      <Actions>
+        <Action Action="OpenDialog" Param="20000" />
         <Action Action="OpenDialog" Param="903" />
       </Actions>
     </Control>

@@ -115,8 +115,7 @@
           <Id>40</Id>
           <Width>1024</Width>
           <Height>768</Height>
-          <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <VisibleCondition>IsMediaPortalListLayout(Vertical) || IsMediaPortalListLayout(VerticalIcon)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle StyleId="Empty" />
@@ -146,23 +145,6 @@
               <ImageStretch>Fill</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
-            <Control x:type="Label">
-              <Name>Title</Name>
-              <Id>44</Id>
-              <Width>1230</Width>
-              <Height>200</Height>
-              <PosX>10</PosX>
-              <PosY>506</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <LabelStyle StyleId="Avalon 74 White" />
-              <LabelText>#TVSeries.Title</LabelText>
-              <IsVertical>true</IsVertical>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-            </Control>
             <Control x:type="Group">
               <Name>ClearArt</Name>
               <Id>150</Id>
@@ -182,7 +164,7 @@
                   <PosY>122</PosY>
                   <VisibleCondition />
                   <Animations>
-                    <Animation x:type="Rotate" Condition="VisibleTrue" Duration="4000" Repeat="10000" Pos3DZTo="-360" />
+                    <Animation x:type="Rotate" Condition="VisibleTrue" Duration="8000" Repeat="10000" Pos3DZTo="-360" />
                   </Animations>
                   <MediaPortalFocusControls />
                   <ImageStyle StyleId="Logo_Image" />
@@ -242,10 +224,9 @@
                 <Control x:type="Image">
                   <Name>ClearArt</Name>
                   <Id>159</Id>
-                  <Width>452</Width>
-                  <Height>166</Height>
-                  <PosX>552</PosX>
-                  <PosY>591</PosY>
+                  <Width>1024</Width>
+                  <Height>258</Height>
+                  <PosY>506</PosY>
                   <VisibleCondition />
                   <Animations />
                   <MediaPortalFocusControls />
@@ -315,6 +296,23 @@
                   <VerticalIconItemStyle StyleId="TVSeries Vertical Icon" />
                   <HorizontalItemStyle StyleId="Horizontal" />
                   <CoverFlowItemStyle StyleId="Coverflow" />
+                </Control>
+                <Control x:type="Label">
+                  <Name>Title</Name>
+                  <Id>178</Id>
+                  <Width>1230</Width>
+                  <Height>200</Height>
+                  <PosX>10</PosX>
+                  <PosY>506</PosY>
+                  <VisibleCondition />
+                  <Animations />
+                  <MediaPortalFocusControls />
+                  <LabelStyle StyleId="Avalon 74 White" />
+                  <LabelText>#TVSeries.Title</LabelText>
+                  <IsVertical>true</IsVertical>
+                  <IsScrollingEnabled>false</IsScrollingEnabled>
+                  <ScrollSpeed>2</ScrollSpeed>
+                  <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
                 </Control>
               </GroupControls>
             </Control>
