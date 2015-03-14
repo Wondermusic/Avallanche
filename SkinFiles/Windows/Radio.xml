@@ -290,7 +290,7 @@
       </GroupControls>
     </Control>
     <Control x:type="Group">
-      <Name>RadioTime Presets</Name>
+      <Name>TuneIn Presets</Name>
       <Id>33</Id>
       <Width>1024</Width>
       <Height>768</Height>
@@ -643,7 +643,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <LabelStyle StyleId="Avalon 50 Blue" />
-              <LabelText>RadioTime</LabelText>
+              <LabelText>TuneIn</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
