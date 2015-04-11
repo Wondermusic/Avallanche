@@ -392,7 +392,7 @@
       <FocusBorderBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />
       <LabelHorizontalAlignment>Right</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
@@ -673,7 +673,7 @@
       <FocusBorderBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
@@ -717,7 +717,7 @@
       <FocusBorderBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
@@ -743,7 +743,7 @@
       <ShadeBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
@@ -762,8 +762,8 @@
       <FocusBorderBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
       <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
@@ -897,12 +897,18 @@
     <ControlStyle x:type="ListItemStyle" StyleId="MovPic_Vertical2">
       <NoFocusBrush />
       <NoFocusBorderBrush />
-      <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Horizontal</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF1E90FF" Offset="0.302" />
+          <GradientStop Color="#001E90FF" Offset="1" />
+        </GradientStops>
+      </FocusBrush>
       <FocusBorderBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
       <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
@@ -926,7 +932,7 @@
       <FocusBorderBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>

@@ -250,7 +250,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <LabelStyle StyleId="Avalon 85 White" />
-              <LabelText>#music.albumArtist</LabelText>
+              <LabelText>#Play.Current.Artist</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <ScrollSpeed>2</ScrollSpeed>
             </Control>
@@ -340,7 +340,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <LabelStyle StyleId="Avalon 85 White" />
-              <LabelText>#music.albumArtist</LabelText>
+              <LabelText>#Play.Current.Artist</LabelText>
               <LabelTextAlignment>Center</LabelTextAlignment>
               <ScrollSpeed>2</ScrollSpeed>
             </Control>

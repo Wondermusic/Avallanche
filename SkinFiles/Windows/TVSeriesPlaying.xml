@@ -54,7 +54,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <BackgroundBrush x:type="ColorBrush" Color="#E2000000" />
+              <BackgroundBrush x:type="ColorBrush" Color="#A8000000" />
             </Control>
             <Control x:type="Image">
               <Name>Overlay</Name>
