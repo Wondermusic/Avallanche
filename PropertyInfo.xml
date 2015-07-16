@@ -325,6 +325,15 @@
       <IsInternal>false</IsInternal>
     </XmlProperty>
     <XmlProperty>
+      <SkinTag>#MPD.MovingPictures.Backdrop</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#MovingPictures.Backdrop" />
+        <XmlMediaPortalTag Tag="#MovingPictures.Backdrop2" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
       <SkinTag>#MovingPictures.SelectedMovie.backdropfullpath</SkinTag>
       <PropertyType>Image</PropertyType>
       <MediaPortalTags>
@@ -378,9 +387,27 @@
     <XmlProperty>
       <SkinTag>#MPD.TVSeries.ClearArt</SkinTag>
       <PropertyType>Image</PropertyType>
+      <DesignerValue>New....</DesignerValue>
       <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#TVSeries.Play.DVDArt.ClearArt" />
         <XmlMediaPortalTag Tag="#TVSeries.Play.ClearArt" />
+        <XmlMediaPortalTag Tag="#TVSeries.Play.DVDArt.ClearArt" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Slideshow.Thumb</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Slideshow.Thumb" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#fanarthandler.picture.backdrop.selected</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#fanarthandler.picture.backdrop.selected" />
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>
@@ -2537,6 +2564,240 @@
       <DesignerValue>Anruf aus dem Weißen Haus</DesignerValue>
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#latestMediaHandler.tvseries.selected.episodeName" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#timeoutValue</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>15000</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#timeoutValue" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#skipValue</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>100</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#skipValue" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#homeScreen</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#homeScreen" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#defaultrate</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#defaultrate" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#skin.basichome.moviePlugin</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Moving Pictures</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#skin.basichome.moviePlugin" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#skin.tvguide.rows</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>11</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#skin.tvguide.rows" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#fps</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>59.87 fps</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#fps" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#thumbInterpolation</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#thumbInterpolation" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#thumbSmoothing</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#thumbSmoothing" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#thumbScreen</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#thumbScreen" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#thumbCompositing</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#thumbCompositing" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#displayTimeout</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#displayTimeout" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#zapDelay</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#zapDelay" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#zapTimeout</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#zapTimeout" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.EquipmentMake</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>SONY</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.EquipmentMake" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.CameraModel</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>DSC-150P</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.CameraModel" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.ImageDimensionsX</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>1980</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.ImageDimensionsX" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.ImageDimensionsY</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>1080</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.ImageDimensionsY" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.DatePictureTaken</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.DatePictureTaken" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.ResolutionX</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>72,00</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.ResolutionX" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.ResolutionY</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>72,00</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.ResolutionY" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.Flash</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.Flash" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.MeteringMode</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Pattern</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.MeteringMode" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.ExposureBias</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>0 step</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.ExposureBias" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.Fstop</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>f/5,6</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.Fstop" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.ExposureTime</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>1/1000 sec.</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.ExposureTime" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#Picture.Exif.MapData</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>N,51.277431,E,7.262493</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#Picture.Exif.MapData" />
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>

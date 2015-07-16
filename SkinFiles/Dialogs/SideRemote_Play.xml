@@ -3,7 +3,7 @@
   <Name>SideRemote_Play</Name>
   <Id>904</Id>
   <Width>520</Width>
-  <Height>576</Height>
+  <Height>645</Height>
   <BorderThickness>2</BorderThickness>
   <CornerRadius>25,25,25,25</CornerRadius>
   <BackgroundBrush x:type="GradientBrush">
@@ -1020,6 +1020,23 @@
           </Actions>
         </Control>
       </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>ShortCutMenu</Name>
+      <Id>36</Id>
+      <Width>354</Width>
+      <Height>100</Height>
+      <PosX>77</PosX>
+      <PosY>524</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="Clear" />
+      <Image>\Settings\Remote text.png</Image>
+      <Actions>
+        <Action Action="OpenDialog" Param="20000" />
+        <Action Action="OpenDialog" Param="904" />
+      </Actions>
     </Control>
   </DialogControls>
 </Dialog>
